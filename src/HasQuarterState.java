@@ -5,8 +5,8 @@
 
 import java.util.Random;
 
-public class HasQuarterState implements State {
-    GumballMachine gumballMachine;
+public class HasQuarterState implements State{
+    transient private GumballMachine gumballMachine;
     Random r = new Random(System.currentTimeMillis());
 
     public HasQuarterState(GumballMachine gumballMachine) {

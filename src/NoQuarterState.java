@@ -4,7 +4,7 @@
  */
 
 public class NoQuarterState implements State {
-    GumballMachine gumballMachine;
+    transient private GumballMachine gumballMachine;
 
     public NoQuarterState(GumballMachine gumballMachine) {
         this.gumballMachine = gumballMachine;
